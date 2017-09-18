@@ -518,6 +518,8 @@ CGFunctionRef myGetFunction (CGColorSpaceRef colorspace)
     
     CGColorSpaceRef colorSpaceRef = CGBitmapContextGetColorSpace (context);
     
+    CGFloat fSpacing = 1.5;
+    
     // 1. Отображаем текст уровень 0
     CGContextSaveGState(layContext);
     
@@ -534,13 +536,16 @@ CGFunctionRef myGetFunction (CGColorSpaceRef colorspace)
     CGContextSetTextDrawingMode (layContext, kCGTextFill);
     
     tempString = @"0º";
-    strBuff = calloc([tempString length], sizeof(unichar));
+    NSUInteger nGlyphsCount = 0;
+    nGlyphsCount = [tempString length];
+
+    strBuff = calloc(nGlyphsCount, sizeof(unichar));
     NSRange range;
     range.location=0;
-    range.length=[tempString length];
+    range.length=nGlyphsCount;
     [tempString getCharacters:strBuff range:range];
     
-    pGlyphsBuff = calloc([tempString length], sizeof(CGGlyph));
+    pGlyphsBuff = calloc(nGlyphsCount, sizeof(CGGlyph));
     glyphs = (CGGlyph*)pGlyphsBuff;
     
     tfontref =  CTFontCreateWithName ((__bridge CFStringRef)fontName,
@@ -549,7 +554,7 @@ CGFunctionRef myGetFunction (CGColorSpaceRef colorspace)
     CTFontGetGlyphsForCharacters (tfontref,
                                   strBuff,
                                   glyphs,
-                                  [tempString length]);
+                                  nGlyphsCount);
     if (strBuff) free(strBuff);
     
     // вычисляем позицию текста
@@ -560,12 +565,36 @@ CGFunctionRef myGetFunction (CGColorSpaceRef colorspace)
     CGContextTranslateCTM(layContext, 0, /*m_points[0].y*/fYpos);
     CGContextScaleCTM(layContext, m_sx, -m_sy);
     
-    CGPoint Lposition;
-    Lposition.x = m_points[0].x+m_nRadius1*2+1;
-    Lposition.y = /*fYpos*/0;
+    //CGPoint Lposition;
+    //Lposition.x = m_points[0].x+m_nRadius1*2+1;
+    //Lposition.y = /*fYpos*/0;
     
-    CGContextShowGlyphsAtPositions (layContext, glyphs, &Lposition, [tempString length]);
+    // Определяем массив точек для рисования букв
+    CGPoint *positionsGlyph = NULL;
+    CGRect *boundingRects = NULL;
     
+    positionsGlyph = calloc(nGlyphsCount, sizeof(CGPoint));
+    boundingRects = calloc(nGlyphsCount, sizeof(CGRect));
+    
+    CTFontGetBoundingRectsForGlyphs (tfontref,
+                                     kCTFontDefaultOrientation,
+                                     glyphs,
+                                     boundingRects,
+                                     nGlyphsCount);
+    
+    CGFloat fOffsets = 0;
+    for (int i = 0; i < nGlyphsCount; i++)
+    {
+        positionsGlyph[i].x = m_points[0].x+m_nRadius1*2+1+fOffsets;
+        positionsGlyph[i].y = 0;
+        
+        fOffsets += boundingRects[i].size.width + fSpacing;
+    }
+    
+    CGContextShowGlyphsAtPositions (layContext, glyphs, positionsGlyph, nGlyphsCount);
+    
+    free(boundingRects);
+    free(positionsGlyph);
     free(pGlyphsBuff);
     
     CGFontRelease(fontRef);
@@ -592,7 +621,7 @@ CGFunctionRef myGetFunction (CGColorSpaceRef colorspace)
     CGContextSetTextDrawingMode (layContext, kCGTextFill);
    
     tempString = [NSString stringWithFormat:@"%ldº", Temperature];
-    CFIndex nGlyphsCount = [tempString length];
+    nGlyphsCount = [tempString length];
         
     strBuff = calloc(nGlyphsCount, sizeof(unichar));
     range.location=0;
@@ -622,24 +651,34 @@ CGFunctionRef myGetFunction (CGColorSpaceRef colorspace)
     CGContextTranslateCTM(layContext, 0, fYpos);    
     CGContextScaleCTM(layContext, m_sx, -m_sy);
     
-    //CGContextShowGlyphsAtPoint (layContext, m_points[0].x+m_nRadius1*2+10, 0, glyphs, [tempString length]);
+    //+CGContextShowGlyphsAtPoint (layContext, m_points[0].x+m_nRadius1*2+10, 0, glyphs, [tempString length]);
     
-    CGPoint *LPositions = nil;
-    LPositions = (CGPoint*)calloc(nGlyphsCount, sizeof(CGPoint));
+    // Определяем массив точек для рисования букв
+    positionsGlyph = NULL;
+    boundingRects = NULL;
     
+    positionsGlyph = calloc(nGlyphsCount, sizeof(CGPoint));
+    boundingRects = calloc(nGlyphsCount, sizeof(CGRect));
+    
+    CTFontGetBoundingRectsForGlyphs (tfontref,
+                                     kCTFontDefaultOrientation,
+                                     glyphs,
+                                     boundingRects,
+                                     nGlyphsCount);
+    
+    fOffsets = 0;
     for (int i = 0; i < nGlyphsCount; i++)
     {
-        CGPoint point;
-        point.x =  m_points[0].x+m_nRadius1*2+10+i*12;
-        point.y = 0;
+        positionsGlyph[i].x = m_points[0].x+m_nRadius1*2+10+fOffsets;
+        positionsGlyph[i].y = 0;
         
-        LPositions[i] = point;
+        fOffsets += boundingRects[i].size.width + fSpacing;
     }
     
-    CGContextShowGlyphsAtPositions (layContext, glyphs, LPositions, nGlyphsCount);
+    CGContextShowGlyphsAtPositions (layContext, glyphs, positionsGlyph, nGlyphsCount);
     
-    if (LPositions) free (LPositions);
-    
+    free(boundingRects);
+    free(positionsGlyph);
     free(pGlyphsBuff);
     
     CGFontRelease(fontRef);
