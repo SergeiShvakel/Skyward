@@ -27,7 +27,7 @@
     assert(fontName);
     
     CGFontRef fontRef = nil;
-    CGFloat fSpacing = 1.5;
+    CGFloat fSpacing = 1.6;
     
     //NSString *tempString = nil;
     unichar *strBuff = nil;
