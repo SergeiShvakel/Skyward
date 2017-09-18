@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VariablesViewState
+   version = "1.0">
+   <ContextStates>
+      <ContextState
+         contextName = "-[wsElemTherm drawRect:]:wsElemTherm.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[WSWorldWeatherRequest connection:willSendRequest:redirectResponse:]:WSWorldWeatherRequest.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "error">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[cTextExchange _GetFieldValue:FieldName:Value:]:TextExchange.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "buffer">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[WSModel saveFaivoritCities]:WSModel.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "docDirectory">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+   </ContextStates>
+</VariablesViewState>

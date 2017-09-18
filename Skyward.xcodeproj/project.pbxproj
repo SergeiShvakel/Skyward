@@ -1,0 +1,634 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4914A6FB1831594D006D88B3 /* SWWaitProgressController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4914A6FA1831594D006D88B3 /* SWWaitProgressController.m */; };
+		495C1391182E250600302200 /* SWCityAddController.m in Sources */ = {isa = PBXBuildFile; fileRef = 495C138F182E250600302200 /* SWCityAddController.m */; };
+		495C139B182E652000302200 /* SWCityAddController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 495C139D182E652000302200 /* SWCityAddController.xib */; };
+		49642BC1175E7DBB0033E2E5 /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49642BC0175E7DBB0033E2E5 /* CoreText.framework */; };
+		4978E323182B88B100816B9D /* SWCityManageController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4978E321182B88B100816B9D /* SWCityManageController.m */; };
+		4978E324182B88B100816B9D /* SWCityManageController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4978E322182B88B100816B9D /* SWCityManageController.xib */; };
+		4988D5F4191AA86900AB6F4F /* SWCityResultSearchCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4988D5F2191AA86900AB6F4F /* SWCityResultSearchCell.m */; };
+		4988D5F5191AA86900AB6F4F /* SWCityResultSearchCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4988D5F3191AA86900AB6F4F /* SWCityResultSearchCell.xib */; };
+		4991FD1E17DE470E0025639A /* TextExchangeException.m in Sources */ = {isa = PBXBuildFile; fileRef = 4991FD1D17DE470E0025639A /* TextExchangeException.m */; };
+		499C442F17A3D6E3007D20FE /* WSWorldWeatherRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 499C442E17A3D6E3007D20FE /* WSWorldWeatherRequest.m */; };
+		499C443117A3D722007D20FE /* wsWeath.m in Sources */ = {isa = PBXBuildFile; fileRef = 499C443017A3D722007D20FE /* wsWeath.m */; };
+		499C443317A3D745007D20FE /* wsWeathDate.m in Sources */ = {isa = PBXBuildFile; fileRef = 499C443217A3D745007D20FE /* wsWeathDate.m */; };
+		499C443517A3D761007D20FE /* WSModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 499C443417A3D761007D20FE /* WSModel.m */; };
+		499C443717A3D78A007D20FE /* XPathQuery.m in Sources */ = {isa = PBXBuildFile; fileRef = 499C443617A3D78A007D20FE /* XPathQuery.m */; };
+		499C443B17A3D7D4007D20FE /* WSControllerTabView.m in Sources */ = {isa = PBXBuildFile; fileRef = 499C443A17A3D7D4007D20FE /* WSControllerTabView.m */; };
+		499C443D17A3D7F5007D20FE /* WSStartViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 499C443C17A3D7F5007D20FE /* WSStartViewController.m */; };
+		499C443F17A3D825007D20FE /* WSCoreCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 499C443E17A3D825007D20FE /* WSCoreCell.m */; };
+		499C444317A3D87C007D20FE /* WSCityWeathCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 499C444217A3D87C007D20FE /* WSCityWeathCell.m */; };
+		499C444517A3D8A2007D20FE /* sCity.m in Sources */ = {isa = PBXBuildFile; fileRef = 499C444417A3D8A2007D20FE /* sCity.m */; };
+		499C444717A3D8C6007D20FE /* WSCityWeathCellViewContext.m in Sources */ = {isa = PBXBuildFile; fileRef = 499C444617A3D8C6007D20FE /* WSCityWeathCellViewContext.m */; };
+		499C444917A3D901007D20FE /* WSMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 499C444817A3D901007D20FE /* WSMainViewController.m */; };
+		499C444B17A3D923007D20FE /* WSFlipsideViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 499C444A17A3D922007D20FE /* WSFlipsideViewController.m */; };
+		499C444F17A3DB6C007D20FE /* WSAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 499C444E17A3DB6C007D20FE /* WSAppDelegate.m */; };
+		499C445217A3DBC7007D20FE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 499C445117A3DBC7007D20FE /* main.m */; };
+		499C445817A3DC7B007D20FE /* wsElemTherm.m in Sources */ = {isa = PBXBuildFile; fileRef = 499C445717A3DC7B007D20FE /* wsElemTherm.m */; };
+		499C445B17A3DCBE007D20FE /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 499C445A17A3DCBE007D20FE /* Default.png */; };
+		499C445F17A3DD27007D20FE /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 499C445D17A3DD27007D20FE /* Default-568h@2x.png */; };
+		499C446017A3DD27007D20FE /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 499C445E17A3DD27007D20FE /* Default@2x.png */; };
+		499C446317A3DD86007D20FE /* WSMainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 499C446117A3DD86007D20FE /* WSMainViewController.xib */; };
+		499C446517A3DDA6007D20FE /* WSControllerTabView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 499C446417A3DDA6007D20FE /* WSControllerTabView.xib */; };
+		499C446817A3DDC0007D20FE /* WSFlipsideViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 499C446617A3DDC0007D20FE /* WSFlipsideViewController.xib */; };
+		499C446A17A3DDDB007D20FE /* WSStartViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 499C446917A3DDDB007D20FE /* WSStartViewController.xib */; };
+		499C446D17A3DE02007D20FE /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 499C446B17A3DE02007D20FE /* InfoPlist.strings */; };
+		499C447417A3E51E007D20FE /* TextExchange.m in Sources */ = {isa = PBXBuildFile; fileRef = 499C447317A3E51E007D20FE /* TextExchange.m */; };
+		49A35AB2171F1E32006D2474 /* libxml2.2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 49A35AB1171F1E32006D2474 /* libxml2.2.dylib */; };
+		49AA799A171745CC00895C7B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49AA7999171745CC00895C7B /* UIKit.framework */; };
+		49AA799C171745CC00895C7B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49AA799B171745CC00895C7B /* Foundation.framework */; };
+		49AA799E171745CC00895C7B /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49AA799D171745CC00895C7B /* CoreGraphics.framework */; };
+		49BB05AB191BFB8B00AE0F81 /* SWCityResultSearchView.m in Sources */ = {isa = PBXBuildFile; fileRef = 49BB05AA191BFB8B00AE0F81 /* SWCityResultSearchView.m */; };
+		49DB2CA31908440800C25318 /* SBJson4Parser.m in Sources */ = {isa = PBXBuildFile; fileRef = 49DB2CA21908440800C25318 /* SBJson4Parser.m */; };
+		49DB2CA61908443C00C25318 /* SBJson4StreamParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 49DB2CA51908443C00C25318 /* SBJson4StreamParser.m */; };
+		49DB2CAB19084A2500C25318 /* SBJson4StreamParserState.m in Sources */ = {isa = PBXBuildFile; fileRef = 49DB2CA819084A2500C25318 /* SBJson4StreamParserState.m */; };
+		49DB2CAC19084A2500C25318 /* SBJson4StreamTokeniser.m in Sources */ = {isa = PBXBuildFile; fileRef = 49DB2CAA19084A2500C25318 /* SBJson4StreamTokeniser.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		4914A6F91831594D006D88B3 /* SWWaitProgressController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SWWaitProgressController.h; path = Skyward/CityController/SWWaitProgressController.h; sourceTree = SOURCE_ROOT; };
+		4914A6FA1831594D006D88B3 /* SWWaitProgressController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SWWaitProgressController.m; path = Skyward/CityController/SWWaitProgressController.m; sourceTree = SOURCE_ROOT; };
+		4940D16D17A6773300CCEA74 /* ru */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = ru; path = ru.lproj/WSMainViewController.xib; sourceTree = "<group>"; };
+		4940D16E17A6773300CCEA74 /* ru */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = ru; path = ru.lproj/WSFlipsideViewController.xib; sourceTree = "<group>"; };
+		4940D16F17A6773300CCEA74 /* ru */ = {isa = PBXFileReference; explicitFileType = text.plist.strings; fileEncoding = 10; name = ru; path = ru.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		4949F929182F70EA002A8D14 /* ru */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = ru; path = ru.lproj/SWCityAddController.xib; sourceTree = "<group>"; };
+		495C138E182E250600302200 /* SWCityAddController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SWCityAddController.h; path = Skyward/CityController/SWCityAddController.h; sourceTree = SOURCE_ROOT; };
+		495C138F182E250600302200 /* SWCityAddController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SWCityAddController.m; path = Skyward/CityController/SWCityAddController.m; sourceTree = SOURCE_ROOT; };
+		495C139C182E652000302200 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/SWCityAddController.xib; sourceTree = "<group>"; };
+		49642BC0175E7DBB0033E2E5 /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = System/Library/Frameworks/CoreText.framework; sourceTree = SDKROOT; };
+		4978E320182B88B100816B9D /* SWCityManageController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SWCityManageController.h; path = Skyward/CityController/SWCityManageController.h; sourceTree = SOURCE_ROOT; };
+		4978E321182B88B100816B9D /* SWCityManageController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SWCityManageController.m; path = Skyward/CityController/SWCityManageController.m; sourceTree = SOURCE_ROOT; };
+		4978E322182B88B100816B9D /* SWCityManageController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = SWCityManageController.xib; path = Skyward/CityController/SWCityManageController.xib; sourceTree = SOURCE_ROOT; };
+		497D1FFF190447B800B88727 /* WSFlipsideViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WSFlipsideViewController.h; path = Skyward/WSFlipsideViewController.h; sourceTree = SOURCE_ROOT; };
+		4988D5F1191AA86900AB6F4F /* SWCityResultSearchCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SWCityResultSearchCell.h; path = Skyward/CityController/SWCityResultSearchCell.h; sourceTree = SOURCE_ROOT; };
+		4988D5F2191AA86900AB6F4F /* SWCityResultSearchCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SWCityResultSearchCell.m; path = Skyward/CityController/SWCityResultSearchCell.m; sourceTree = SOURCE_ROOT; };
+		4988D5F3191AA86900AB6F4F /* SWCityResultSearchCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = SWCityResultSearchCell.xib; path = Skyward/CityController/SWCityResultSearchCell.xib; sourceTree = SOURCE_ROOT; };
+		4991FD1C17DE470E0025639A /* TextExchangeException.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TextExchangeException.h; path = Skyward/CityModel/TextExchangeException.h; sourceTree = SOURCE_ROOT; };
+		4991FD1D17DE470E0025639A /* TextExchangeException.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TextExchangeException.m; path = Skyward/CityModel/TextExchangeException.m; sourceTree = SOURCE_ROOT; };
+		499C442E17A3D6E3007D20FE /* WSWorldWeatherRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WSWorldWeatherRequest.m; path = Skyward/SkyModel/WSWorldWeatherRequest.m; sourceTree = SOURCE_ROOT; };
+		499C443017A3D722007D20FE /* wsWeath.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = wsWeath.m; path = Skyward/SkyModel/wsWeath.m; sourceTree = SOURCE_ROOT; };
+		499C443217A3D745007D20FE /* wsWeathDate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = wsWeathDate.m; path = Skyward/SkyModel/wsWeathDate.m; sourceTree = SOURCE_ROOT; };
+		499C443417A3D761007D20FE /* WSModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WSModel.m; path = Skyward/SkyModel/WSModel.m; sourceTree = SOURCE_ROOT; };
+		499C443617A3D78A007D20FE /* XPathQuery.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = XPathQuery.m; path = Skyward/XPathQuery/XPathQuery.m; sourceTree = SOURCE_ROOT; };
+		499C443A17A3D7D4007D20FE /* WSControllerTabView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WSControllerTabView.m; path = Skyward/TabViewController/WSControllerTabView.m; sourceTree = SOURCE_ROOT; };
+		499C443C17A3D7F5007D20FE /* WSStartViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WSStartViewController.m; path = Skyward/StartViewController/WSStartViewController.m; sourceTree = SOURCE_ROOT; };
+		499C443E17A3D825007D20FE /* WSCoreCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WSCoreCell.m; path = Skyward/TabViewController/Cell/WSCoreCell.m; sourceTree = SOURCE_ROOT; };
+		499C444217A3D87C007D20FE /* WSCityWeathCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WSCityWeathCell.m; path = Skyward/TabViewController/Cell/WSCityWeathCell.m; sourceTree = SOURCE_ROOT; };
+		499C444417A3D8A2007D20FE /* sCity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = sCity.m; path = Skyward/CityModel/sCity.m; sourceTree = SOURCE_ROOT; };
+		499C444617A3D8C6007D20FE /* WSCityWeathCellViewContext.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WSCityWeathCellViewContext.m; path = Skyward/TabViewController/Cell/WSCityWeathCellViewContext.m; sourceTree = SOURCE_ROOT; };
+		499C444817A3D901007D20FE /* WSMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WSMainViewController.m; path = Skyward/WSMainViewController.m; sourceTree = SOURCE_ROOT; };
+		499C444A17A3D922007D20FE /* WSFlipsideViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WSFlipsideViewController.m; path = Skyward/WSFlipsideViewController.m; sourceTree = SOURCE_ROOT; };
+		499C444C17A3DA46007D20FE /* WSControllerTabView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WSControllerTabView.h; path = Skyward/TabViewController/WSControllerTabView.h; sourceTree = SOURCE_ROOT; };
+		499C444D17A3DB43007D20FE /* XPathQuery.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XPathQuery.h; path = Skyward/XPathQuery/XPathQuery.h; sourceTree = SOURCE_ROOT; };
+		499C444E17A3DB6C007D20FE /* WSAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WSAppDelegate.m; path = Skyward/WSAppDelegate.m; sourceTree = SOURCE_ROOT; };
+		499C445017A3DB9F007D20FE /* WSModelDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WSModelDelegate.h; path = Skyward/SkyModel/WSModelDelegate.h; sourceTree = SOURCE_ROOT; };
+		499C445117A3DBC7007D20FE /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = Skyward/main.m; sourceTree = SOURCE_ROOT; };
+		499C445317A3DBE7007D20FE /* WSAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WSAppDelegate.h; path = Skyward/WSAppDelegate.h; sourceTree = SOURCE_ROOT; };
+		499C445417A3DC0D007D20FE /* WSStartViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WSStartViewController.h; path = Skyward/StartViewController/WSStartViewController.h; sourceTree = SOURCE_ROOT; };
+		499C445517A3DC39007D20FE /* WSCityWeathCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WSCityWeathCell.h; path = Skyward/TabViewController/Cell/WSCityWeathCell.h; sourceTree = SOURCE_ROOT; };
+		499C445617A3DC5C007D20FE /* wsWeath.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = wsWeath.h; path = Skyward/SkyModel/wsWeath.h; sourceTree = SOURCE_ROOT; };
+		499C445717A3DC7B007D20FE /* wsElemTherm.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = wsElemTherm.m; path = Skyward/ViewElements/wsElemTherm.m; sourceTree = SOURCE_ROOT; };
+		499C445917A3DC8C007D20FE /* wsElemTherm.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = wsElemTherm.h; path = Skyward/ViewElements/wsElemTherm.h; sourceTree = SOURCE_ROOT; };
+		499C445A17A3DCBE007D20FE /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Default.png; path = Skyward/Resource/Default.png; sourceTree = SOURCE_ROOT; };
+		499C445D17A3DD27007D20FE /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default-568h@2x.png"; path = "Skyward/Resource/Default-568h@2x.png"; sourceTree = SOURCE_ROOT; };
+		499C445E17A3DD27007D20FE /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default@2x.png"; path = "Skyward/Resource/Default@2x.png"; sourceTree = SOURCE_ROOT; };
+		499C446217A3DD86007D20FE /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = Skyward/en.lproj/WSMainViewController.xib; sourceTree = SOURCE_ROOT; };
+		499C446417A3DDA6007D20FE /* WSControllerTabView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = WSControllerTabView.xib; path = Skyward/TabViewController/WSControllerTabView.xib; sourceTree = SOURCE_ROOT; };
+		499C446717A3DDC0007D20FE /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = Skyward/en.lproj/WSFlipsideViewController.xib; sourceTree = SOURCE_ROOT; };
+		499C446917A3DDDB007D20FE /* WSStartViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = WSStartViewController.xib; path = Skyward/StartViewController/WSStartViewController.xib; sourceTree = SOURCE_ROOT; };
+		499C446C17A3DE02007D20FE /* en */ = {isa = PBXFileReference; fileEncoding = 10; lastKnownFileType = text.plist.strings; name = en; path = Skyward/en.lproj/InfoPlist.strings; sourceTree = SOURCE_ROOT; };
+		499C446E17A3DE1A007D20FE /* Skyward-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "Skyward-Info.plist"; path = "Skyward/Skyward-Info.plist"; sourceTree = SOURCE_ROOT; };
+		499C447117A3DFCE007D20FE /* TextExchange.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TextExchange.h; path = Skyward/CityModel/TextExchange.h; sourceTree = SOURCE_ROOT; };
+		499C447317A3E51E007D20FE /* TextExchange.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TextExchange.m; path = Skyward/CityModel/TextExchange.m; sourceTree = SOURCE_ROOT; };
+		499FA8D617567BDF00541750 /* WSCoreCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WSCoreCell.h; path = Skyward/TabViewController/Cell/WSCoreCell.h; sourceTree = "<group>"; };
+		499FA8DD17567E4F00541750 /* WSCityWeathCellViewContext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WSCityWeathCellViewContext.h; path = Skyward/TabViewController/Cell/WSCityWeathCellViewContext.h; sourceTree = "<group>"; };
+		499FF17317A829820035D26B /* sCity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = sCity.h; path = Skyward/CityModel/sCity.h; sourceTree = SOURCE_ROOT; };
+		49A35AB1171F1E32006D2474 /* libxml2.2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxml2.2.dylib; path = usr/lib/libxml2.2.dylib; sourceTree = SDKROOT; };
+		49A54D16171C7C6900A3B1D9 /* WSIWeatherRequest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = WSIWeatherRequest.h; path = Skyward/SkyModel/WSIWeatherRequest.h; sourceTree = "<group>"; };
+		49A54D17171C7E1F00A3B1D9 /* WSWorldWeatherRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WSWorldWeatherRequest.h; path = Skyward/SkyModel/WSWorldWeatherRequest.h; sourceTree = "<group>"; };
+		49A54D1B171C901900A3B1D9 /* WSIWeatherRequestDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = WSIWeatherRequestDelegate.h; path = Skyward/SkyModel/WSIWeatherRequestDelegate.h; sourceTree = "<group>"; };
+		49AA7996171745CC00895C7B /* Skyward.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Skyward.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		49AA7999171745CC00895C7B /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		49AA799B171745CC00895C7B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		49AA799D171745CC00895C7B /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		49AA79A7171745CC00895C7B /* Skyward-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "Skyward-Prefix.pch"; path = "Skyward/Skyward-Prefix.pch"; sourceTree = "<group>"; };
+		49AA79B1171745CC00895C7B /* WSMainViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = WSMainViewController.h; path = Skyward/WSMainViewController.h; sourceTree = "<group>"; };
+		49AA79CB171754B500895C7B /* WSModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WSModel.h; path = Skyward/SkyModel/WSModel.h; sourceTree = "<group>"; };
+		49B18773172EFA9C009D18B1 /* wsWeathDate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = wsWeathDate.h; path = Skyward/SkyModel/wsWeathDate.h; sourceTree = "<group>"; };
+		49BB05A9191BFB8B00AE0F81 /* SWCityResultSearchView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SWCityResultSearchView.h; path = Skyward/CityController/SWCityResultSearchView.h; sourceTree = SOURCE_ROOT; };
+		49BB05AA191BFB8B00AE0F81 /* SWCityResultSearchView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SWCityResultSearchView.m; path = Skyward/CityController/SWCityResultSearchView.m; sourceTree = SOURCE_ROOT; };
+		49DB2CA11908440800C25318 /* SBJson4Parser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJson4Parser.h; sourceTree = SOURCE_ROOT; };
+		49DB2CA21908440800C25318 /* SBJson4Parser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJson4Parser.m; sourceTree = SOURCE_ROOT; };
+		49DB2CA41908443C00C25318 /* SBJson4StreamParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJson4StreamParser.h; sourceTree = SOURCE_ROOT; };
+		49DB2CA51908443C00C25318 /* SBJson4StreamParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJson4StreamParser.m; sourceTree = SOURCE_ROOT; };
+		49DB2CA719084A2500C25318 /* SBJson4StreamParserState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJson4StreamParserState.h; sourceTree = SOURCE_ROOT; };
+		49DB2CA819084A2500C25318 /* SBJson4StreamParserState.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJson4StreamParserState.m; sourceTree = SOURCE_ROOT; };
+		49DB2CA919084A2500C25318 /* SBJson4StreamTokeniser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJson4StreamTokeniser.h; sourceTree = SOURCE_ROOT; };
+		49DB2CAA19084A2500C25318 /* SBJson4StreamTokeniser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJson4StreamTokeniser.m; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		49AA7993171745CC00895C7B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				49642BC1175E7DBB0033E2E5 /* CoreText.framework in Frameworks */,
+				49A35AB2171F1E32006D2474 /* libxml2.2.dylib in Frameworks */,
+				49AA799A171745CC00895C7B /* UIKit.framework in Frameworks */,
+				49AA799C171745CC00895C7B /* Foundation.framework in Frameworks */,
+				49AA799E171745CC00895C7B /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4978E31F182B884400816B9D /* CityController */ = {
+			isa = PBXGroup;
+			children = (
+				4978E320182B88B100816B9D /* SWCityManageController.h */,
+				4978E321182B88B100816B9D /* SWCityManageController.m */,
+				4978E322182B88B100816B9D /* SWCityManageController.xib */,
+				495C138E182E250600302200 /* SWCityAddController.h */,
+				495C138F182E250600302200 /* SWCityAddController.m */,
+				495C139D182E652000302200 /* SWCityAddController.xib */,
+				4988D5F1191AA86900AB6F4F /* SWCityResultSearchCell.h */,
+				4988D5F2191AA86900AB6F4F /* SWCityResultSearchCell.m */,
+				4988D5F3191AA86900AB6F4F /* SWCityResultSearchCell.xib */,
+				49BB05A9191BFB8B00AE0F81 /* SWCityResultSearchView.h */,
+				49BB05AA191BFB8B00AE0F81 /* SWCityResultSearchView.m */,
+				4914A6F91831594D006D88B3 /* SWWaitProgressController.h */,
+				4914A6FA1831594D006D88B3 /* SWWaitProgressController.m */,
+			);
+			name = CityController;
+			sourceTree = "<group>";
+		};
+		499C445C17A3DCE5007D20FE /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				499C445D17A3DD27007D20FE /* Default-568h@2x.png */,
+				499C445E17A3DD27007D20FE /* Default@2x.png */,
+				499C445A17A3DCBE007D20FE /* Default.png */,
+			);
+			name = Resource;
+			sourceTree = "<group>";
+		};
+		499FA8DC17567DC600541750 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				499FA8D617567BDF00541750 /* WSCoreCell.h */,
+				499C443E17A3D825007D20FE /* WSCoreCell.m */,
+				499C445517A3DC39007D20FE /* WSCityWeathCell.h */,
+				499C444217A3D87C007D20FE /* WSCityWeathCell.m */,
+				499FA8DD17567E4F00541750 /* WSCityWeathCellViewContext.h */,
+				499C444617A3D8C6007D20FE /* WSCityWeathCellViewContext.m */,
+			);
+			name = Cell;
+			sourceTree = "<group>";
+		};
+		49A0CD941757D36000C55F0B /* StartViewController */ = {
+			isa = PBXGroup;
+			children = (
+				499C445417A3DC0D007D20FE /* WSStartViewController.h */,
+				499C443C17A3D7F5007D20FE /* WSStartViewController.m */,
+				499C446917A3DDDB007D20FE /* WSStartViewController.xib */,
+			);
+			name = StartViewController;
+			sourceTree = "<group>";
+		};
+		49A35AB0171F1DB7006D2474 /* XPathQuery */ = {
+			isa = PBXGroup;
+			children = (
+				499C444D17A3DB43007D20FE /* XPathQuery.h */,
+				499C443617A3D78A007D20FE /* XPathQuery.m */,
+			);
+			name = XPathQuery;
+			sourceTree = "<group>";
+		};
+		49A5B595173051A000EADF7D /* ViewElements */ = {
+			isa = PBXGroup;
+			children = (
+				499C445917A3DC8C007D20FE /* wsElemTherm.h */,
+				499C445717A3DC7B007D20FE /* wsElemTherm.m */,
+			);
+			name = ViewElements;
+			sourceTree = "<group>";
+		};
+		49AA798D171745CC00895C7B = {
+			isa = PBXGroup;
+			children = (
+				49A35AB1171F1E32006D2474 /* libxml2.2.dylib */,
+				49AA799F171745CC00895C7B /* Skyward */,
+				49AA7998171745CC00895C7B /* Frameworks */,
+				49AA7997171745CC00895C7B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		49AA7997171745CC00895C7B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				49AA7996171745CC00895C7B /* Skyward.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		49AA7998171745CC00895C7B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				49642BC0175E7DBB0033E2E5 /* CoreText.framework */,
+				49AA7999171745CC00895C7B /* UIKit.framework */,
+				49AA799B171745CC00895C7B /* Foundation.framework */,
+				49AA799D171745CC00895C7B /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		49AA799F171745CC00895C7B /* Skyward */ = {
+			isa = PBXGroup;
+			children = (
+				49DB2CA0190843B900C25318 /* SBJSON */,
+				49AD3D2A179733640091C9C9 /* CityModel */,
+				4978E31F182B884400816B9D /* CityController */,
+				49F214D417A3BA5A003338FC /* SkyModel */,
+				49A0CD941757D36000C55F0B /* StartViewController */,
+				49F214D517A3BB2C003338FC /* TabViewController */,
+				49A5B595173051A000EADF7D /* ViewElements */,
+				49A35AB0171F1DB7006D2474 /* XPathQuery */,
+				499C445C17A3DCE5007D20FE /* Resource */,
+				499C445117A3DBC7007D20FE /* main.m */,
+				499C445317A3DBE7007D20FE /* WSAppDelegate.h */,
+				499C444E17A3DB6C007D20FE /* WSAppDelegate.m */,
+				49AA79B1171745CC00895C7B /* WSMainViewController.h */,
+				499C444817A3D901007D20FE /* WSMainViewController.m */,
+				499C446117A3DD86007D20FE /* WSMainViewController.xib */,
+				499C444A17A3D922007D20FE /* WSFlipsideViewController.m */,
+				497D1FFF190447B800B88727 /* WSFlipsideViewController.h */,
+				499C446617A3DDC0007D20FE /* WSFlipsideViewController.xib */,
+				49AA79A0171745CC00895C7B /* Supporting Files */,
+			);
+			name = Skyward;
+			path = WeatherSimple;
+			sourceTree = "<group>";
+		};
+		49AA79A0171745CC00895C7B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				499C446E17A3DE1A007D20FE /* Skyward-Info.plist */,
+				499C446B17A3DE02007D20FE /* InfoPlist.strings */,
+				49AA79A7171745CC00895C7B /* Skyward-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		49AD3D2A179733640091C9C9 /* CityModel */ = {
+			isa = PBXGroup;
+			children = (
+				499FF17317A829820035D26B /* sCity.h */,
+				499C444417A3D8A2007D20FE /* sCity.m */,
+				499C447117A3DFCE007D20FE /* TextExchange.h */,
+				499C447317A3E51E007D20FE /* TextExchange.m */,
+				4991FD1C17DE470E0025639A /* TextExchangeException.h */,
+				4991FD1D17DE470E0025639A /* TextExchangeException.m */,
+			);
+			name = CityModel;
+			sourceTree = "<group>";
+		};
+		49DB2CA0190843B900C25318 /* SBJSON */ = {
+			isa = PBXGroup;
+			children = (
+				49DB2CA719084A2500C25318 /* SBJson4StreamParserState.h */,
+				49DB2CA819084A2500C25318 /* SBJson4StreamParserState.m */,
+				49DB2CA919084A2500C25318 /* SBJson4StreamTokeniser.h */,
+				49DB2CAA19084A2500C25318 /* SBJson4StreamTokeniser.m */,
+				49DB2CA41908443C00C25318 /* SBJson4StreamParser.h */,
+				49DB2CA51908443C00C25318 /* SBJson4StreamParser.m */,
+				49DB2CA11908440800C25318 /* SBJson4Parser.h */,
+				49DB2CA21908440800C25318 /* SBJson4Parser.m */,
+			);
+			name = SBJSON;
+			sourceTree = "<group>";
+		};
+		49F214D417A3BA5A003338FC /* SkyModel */ = {
+			isa = PBXGroup;
+			children = (
+				499C445617A3DC5C007D20FE /* wsWeath.h */,
+				499C443017A3D722007D20FE /* wsWeath.m */,
+				499C443217A3D745007D20FE /* wsWeathDate.m */,
+				49B18773172EFA9C009D18B1 /* wsWeathDate.h */,
+				49AA79CB171754B500895C7B /* WSModel.h */,
+				499C443417A3D761007D20FE /* WSModel.m */,
+				499C445017A3DB9F007D20FE /* WSModelDelegate.h */,
+				49A54D16171C7C6900A3B1D9 /* WSIWeatherRequest.h */,
+				49A54D17171C7E1F00A3B1D9 /* WSWorldWeatherRequest.h */,
+				499C442E17A3D6E3007D20FE /* WSWorldWeatherRequest.m */,
+				49A54D1B171C901900A3B1D9 /* WSIWeatherRequestDelegate.h */,
+			);
+			name = SkyModel;
+			sourceTree = "<group>";
+		};
+		49F214D517A3BB2C003338FC /* TabViewController */ = {
+			isa = PBXGroup;
+			children = (
+				499C446417A3DDA6007D20FE /* WSControllerTabView.xib */,
+				499C444C17A3DA46007D20FE /* WSControllerTabView.h */,
+				499C443A17A3D7D4007D20FE /* WSControllerTabView.m */,
+				499FA8DC17567DC600541750 /* Cell */,
+			);
+			name = TabViewController;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		49AA7995171745CC00895C7B /* Skyward */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 49AA79BF171745CC00895C7B /* Build configuration list for PBXNativeTarget "Skyward" */;
+			buildPhases = (
+				49AA7992171745CC00895C7B /* Sources */,
+				49AA7993171745CC00895C7B /* Frameworks */,
+				49AA7994171745CC00895C7B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Skyward;
+			productName = WeatherSimple;
+			productReference = 49AA7996171745CC00895C7B /* Skyward.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		49AA798E171745CC00895C7B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = SW;
+				LastUpgradeCheck = 0800;
+				ORGANIZATIONNAME = "Сергей Швакель";
+			};
+			buildConfigurationList = 49AA7991171745CC00895C7B /* Build configuration list for PBXProject "Skyward" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				ru,
+			);
+			mainGroup = 49AA798D171745CC00895C7B;
+			productRefGroup = 49AA7997171745CC00895C7B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				49AA7995171745CC00895C7B /* Skyward */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		49AA7994171745CC00895C7B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				495C139B182E652000302200 /* SWCityAddController.xib in Resources */,
+				499C445B17A3DCBE007D20FE /* Default.png in Resources */,
+				499C445F17A3DD27007D20FE /* Default-568h@2x.png in Resources */,
+				499C446017A3DD27007D20FE /* Default@2x.png in Resources */,
+				4978E324182B88B100816B9D /* SWCityManageController.xib in Resources */,
+				499C446317A3DD86007D20FE /* WSMainViewController.xib in Resources */,
+				499C446517A3DDA6007D20FE /* WSControllerTabView.xib in Resources */,
+				499C446817A3DDC0007D20FE /* WSFlipsideViewController.xib in Resources */,
+				499C446A17A3DDDB007D20FE /* WSStartViewController.xib in Resources */,
+				499C446D17A3DE02007D20FE /* InfoPlist.strings in Resources */,
+				4988D5F5191AA86900AB6F4F /* SWCityResultSearchCell.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		49AA7992171745CC00895C7B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				499C442F17A3D6E3007D20FE /* WSWorldWeatherRequest.m in Sources */,
+				49DB2CAC19084A2500C25318 /* SBJson4StreamTokeniser.m in Sources */,
+				499C443117A3D722007D20FE /* wsWeath.m in Sources */,
+				49DB2CAB19084A2500C25318 /* SBJson4StreamParserState.m in Sources */,
+				499C443317A3D745007D20FE /* wsWeathDate.m in Sources */,
+				499C443517A3D761007D20FE /* WSModel.m in Sources */,
+				499C443717A3D78A007D20FE /* XPathQuery.m in Sources */,
+				49BB05AB191BFB8B00AE0F81 /* SWCityResultSearchView.m in Sources */,
+				499C443B17A3D7D4007D20FE /* WSControllerTabView.m in Sources */,
+				499C443D17A3D7F5007D20FE /* WSStartViewController.m in Sources */,
+				499C443F17A3D825007D20FE /* WSCoreCell.m in Sources */,
+				49DB2CA31908440800C25318 /* SBJson4Parser.m in Sources */,
+				495C1391182E250600302200 /* SWCityAddController.m in Sources */,
+				499C444317A3D87C007D20FE /* WSCityWeathCell.m in Sources */,
+				499C444517A3D8A2007D20FE /* sCity.m in Sources */,
+				499C444717A3D8C6007D20FE /* WSCityWeathCellViewContext.m in Sources */,
+				499C444917A3D901007D20FE /* WSMainViewController.m in Sources */,
+				49DB2CA61908443C00C25318 /* SBJson4StreamParser.m in Sources */,
+				499C444B17A3D923007D20FE /* WSFlipsideViewController.m in Sources */,
+				499C444F17A3DB6C007D20FE /* WSAppDelegate.m in Sources */,
+				4988D5F4191AA86900AB6F4F /* SWCityResultSearchCell.m in Sources */,
+				499C445217A3DBC7007D20FE /* main.m in Sources */,
+				4914A6FB1831594D006D88B3 /* SWWaitProgressController.m in Sources */,
+				499C445817A3DC7B007D20FE /* wsElemTherm.m in Sources */,
+				4978E323182B88B100816B9D /* SWCityManageController.m in Sources */,
+				499C447417A3E51E007D20FE /* TextExchange.m in Sources */,
+				4991FD1E17DE470E0025639A /* TextExchangeException.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		495C139D182E652000302200 /* SWCityAddController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				495C139C182E652000302200 /* en */,
+				4949F929182F70EA002A8D14 /* ru */,
+			);
+			name = SWCityAddController.xib;
+			path = Skyward/CityController;
+			sourceTree = SOURCE_ROOT;
+		};
+		499C446117A3DD86007D20FE /* WSMainViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				499C446217A3DD86007D20FE /* en */,
+				4940D16D17A6773300CCEA74 /* ru */,
+			);
+			name = WSMainViewController.xib;
+			path = Skyward;
+			sourceTree = SOURCE_ROOT;
+		};
+		499C446617A3DDC0007D20FE /* WSFlipsideViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				499C446717A3DDC0007D20FE /* en */,
+				4940D16E17A6773300CCEA74 /* ru */,
+			);
+			name = WSFlipsideViewController.xib;
+			path = Skyward;
+			sourceTree = SOURCE_ROOT;
+		};
+		499C446B17A3DE02007D20FE /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				499C446C17A3DE02007D20FE /* en */,
+				4940D16F17A6773300CCEA74 /* ru */,
+			);
+			name = InfoPlist.strings;
+			path = Skyward;
+			sourceTree = SOURCE_ROOT;
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		49AA79BD171745CC00895C7B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		49AA79BE171745CC00895C7B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		49AA79C0171745CC00895C7B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Skyward/Skyward-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"<Multiple",
+					"values>",
+					"${SDKROOT}/usr/include/libxml2",
+				);
+				INFOPLIST_FILE = "$(SRCROOT)/Skyward/Skyward-Info.plist";
+				OTHER_LDFLAGS = "-lxml2";
+				PRODUCT_BUNDLE_IDENTIFIER = "by.shvakel.sergei.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Skyward;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		49AA79C1171745CC00895C7B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Skyward/Skyward-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"<Multiple",
+					"values>",
+					"${SDKROOT}/usr/include/libxml2",
+				);
+				INFOPLIST_FILE = "$(SRCROOT)/Skyward/Skyward-Info.plist";
+				OTHER_LDFLAGS = "-lxml2";
+				PRODUCT_BUNDLE_IDENTIFIER = "by.shvakel.sergei.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Skyward;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		49AA7991171745CC00895C7B /* Build configuration list for PBXProject "Skyward" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				49AA79BD171745CC00895C7B /* Debug */,
+				49AA79BE171745CC00895C7B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		49AA79BF171745CC00895C7B /* Build configuration list for PBXNativeTarget "Skyward" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				49AA79C0171745CC00895C7B /* Debug */,
+				49AA79C1171745CC00895C7B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 49AA798E171745CC00895C7B /* Project object */;
+}
